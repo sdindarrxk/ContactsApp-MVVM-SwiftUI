@@ -13,7 +13,7 @@ struct DetailView: View {
     @State fileprivate var personName = ""
     @State fileprivate var personTel = ""
     
-    // var person = PersonModel()
+//    var person = Person()
     var person = PersonModel()
     
     var viewModel = DetailViewModelCoreData()
@@ -25,7 +25,7 @@ struct DetailView: View {
             TextField("Person Telephone NUmber", text: $personTel)
                 .textFieldStyle(RoundedBorderTextFieldStyle()).padding()
             Button("Update") {
-                // viewModel.update(id: person.id ?? "", name: personName, tel: personTel)
+//                viewModel.update(id: person.id ?? 0, name: personName, tel: personTel)
                 viewModel.update(person: person, name: personName, tel: personTel)
                 dismiss()
             }

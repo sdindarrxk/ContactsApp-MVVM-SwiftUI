@@ -16,7 +16,7 @@ class DetailViewModelSqlite {
         db = FMDatabase(path: destPath.path)
     }
     
-    func update(id: UUID, name: String, tel: String) {
+    func update(id: Int, name: String, tel: String) {
         db?.open()
         
         do {

@@ -22,7 +22,6 @@ struct SaveView: View {
             TextField("Person Telephone NUmber",text: $personTel)
                 .textFieldStyle(RoundedBorderTextFieldStyle()).padding()
             Button("Save") {
-                // viewModel.save(name: personName, tel: personTel)
                 viewModel.save(name: personName, tel: personTel)
                 dismiss()
             }

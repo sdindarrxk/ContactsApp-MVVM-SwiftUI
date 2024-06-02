@@ -8,7 +8,7 @@
 import Foundation
 
 class Person: Identifiable, Codable {
-    var id: String?
+    var id: Int?
     var name: String?
     var tel: String?
     
@@ -22,7 +22,7 @@ class Person: Identifiable, Codable {
         
     }
     
-    init(id: String, name: String, tel: String) {
+    init(id: Int, name: String, tel: String) {
         self.id = id
         self.name = name
         self.tel = tel
