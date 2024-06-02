@@ -14,7 +14,7 @@ class Person: Identifiable, Codable {
     
     enum CodingKeys: String, CodingKey {
         case id = "kisi_id"
-        case name = "kisi_name"
+        case name = "kisi_ad"
         case tel = "kisi_tel"
     }
     
