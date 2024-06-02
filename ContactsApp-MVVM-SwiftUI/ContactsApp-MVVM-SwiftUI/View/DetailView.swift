@@ -13,7 +13,7 @@ struct DetailView: View {
     
     var person = Person()
     
-    var viewModel = DetailViewModel()
+    var viewModel = DetailViewModelSqlite()
     
     var body: some View {
         VStack(spacing: 60) {

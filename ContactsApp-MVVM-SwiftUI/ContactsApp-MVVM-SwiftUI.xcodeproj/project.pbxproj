@@ -12,12 +12,18 @@
 		35B4FC462C0CCD9500EE450C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FC452C0CCD9500EE450C /* Assets.xcassets */; };
 		35B4FC492C0CCD9500EE450C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FC482C0CCD9500EE450C /* Preview Assets.xcassets */; };
 		35B4FC522C0CCDF300EE450C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC512C0CCDF300EE450C /* Person.swift */; };
-		35B4FC572C0CCF7600EE450C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC562C0CCF7600EE450C /* HomeViewModel.swift */; };
-		35B4FC592C0CCF8400EE450C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC582C0CCF8400EE450C /* DetailViewModel.swift */; };
-		35B4FC5B2C0CCF9000EE450C /* SaveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC5A2C0CCF9000EE450C /* SaveViewModel.swift */; };
+		35B4FC572C0CCF7600EE450C /* HomeViewModelSqlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC562C0CCF7600EE450C /* HomeViewModelSqlite.swift */; };
+		35B4FC592C0CCF8400EE450C /* DetailViewModelSqlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC582C0CCF8400EE450C /* DetailViewModelSqlite.swift */; };
+		35B4FC5B2C0CCF9000EE450C /* SaveViewModelSqlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC5A2C0CCF9000EE450C /* SaveViewModelSqlite.swift */; };
 		35B4FC5D2C0CCF9C00EE450C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC5C2C0CCF9C00EE450C /* DetailView.swift */; };
 		35B4FC5F2C0CCFAF00EE450C /* SaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC5E2C0CCFAF00EE450C /* SaveView.swift */; };
 		35B4FC622C0CD14100EE450C /* PersonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC612C0CD14100EE450C /* PersonRow.swift */; };
+		35BA1B182C0CD837003F47AE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BA1B102C0CD837003F47AE /* FMDatabase.m */; };
+		35BA1B192C0CD837003F47AE /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BA1B112C0CD837003F47AE /* FMDatabaseQueue.m */; };
+		35BA1B1A2C0CD837003F47AE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BA1B132C0CD837003F47AE /* FMDatabaseAdditions.m */; };
+		35BA1B1B2C0CD837003F47AE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BA1B142C0CD837003F47AE /* FMDatabasePool.m */; };
+		35BA1B1C2C0CD837003F47AE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BA1B152C0CD837003F47AE /* FMResultSet.m */; };
+		35BA1B222C0CD8C9003F47AE /* rehber.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 35BA1B212C0CD8C9003F47AE /* rehber.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,12 +33,26 @@
 		35B4FC452C0CCD9500EE450C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35B4FC482C0CCD9500EE450C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		35B4FC512C0CCDF300EE450C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		35B4FC562C0CCF7600EE450C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		35B4FC582C0CCF8400EE450C /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
-		35B4FC5A2C0CCF9000EE450C /* SaveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewModel.swift; sourceTree = "<group>"; };
+		35B4FC562C0CCF7600EE450C /* HomeViewModelSqlite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelSqlite.swift; sourceTree = "<group>"; };
+		35B4FC582C0CCF8400EE450C /* DetailViewModelSqlite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelSqlite.swift; sourceTree = "<group>"; };
+		35B4FC5A2C0CCF9000EE450C /* SaveViewModelSqlite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewModelSqlite.swift; sourceTree = "<group>"; };
 		35B4FC5C2C0CCF9C00EE450C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		35B4FC5E2C0CCFAF00EE450C /* SaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveView.swift; sourceTree = "<group>"; };
 		35B4FC612C0CD14100EE450C /* PersonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRow.swift; sourceTree = "<group>"; };
+		35BA1B0B2C0CD7D2003F47AE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		35BA1B0C2C0CD837003F47AE /* ContactsApp-MVVM-SwiftUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ContactsApp-MVVM-SwiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		35BA1B0D2C0CD837003F47AE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		35BA1B0E2C0CD837003F47AE /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		35BA1B0F2C0CD837003F47AE /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		35BA1B102C0CD837003F47AE /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		35BA1B112C0CD837003F47AE /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		35BA1B122C0CD837003F47AE /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		35BA1B132C0CD837003F47AE /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		35BA1B142C0CD837003F47AE /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		35BA1B152C0CD837003F47AE /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		35BA1B162C0CD837003F47AE /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		35BA1B172C0CD837003F47AE /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		35BA1B212C0CD8C9003F47AE /* rehber.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = rehber.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +71,7 @@
 			children = (
 				35B4FC402C0CCD9400EE450C /* ContactsApp-MVVM-SwiftUI */,
 				35B4FC3F2C0CCD9400EE450C /* Products */,
+				35BA1B0A2C0CD7D2003F47AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +91,7 @@
 				35B4FC552C0CCE7A00EE450C /* ViewModel */,
 				35B4FC542C0CCE7400EE450C /* View */,
 				35B4FC502C0CCDAF00EE450C /* Assets */,
+				35BA1B1D2C0CD83E003F47AE /* SQLite */,
 			);
 			path = "ContactsApp-MVVM-SwiftUI";
 			sourceTree = "<group>";
@@ -121,9 +143,7 @@
 		35B4FC552C0CCE7A00EE450C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				35B4FC562C0CCF7600EE450C /* HomeViewModel.swift */,
-				35B4FC582C0CCF8400EE450C /* DetailViewModel.swift */,
-				35B4FC5A2C0CCF9000EE450C /* SaveViewModel.swift */,
+				35BA1B092C0CD770003F47AE /* SQLite */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -134,6 +154,44 @@
 				35B4FC612C0CD14100EE450C /* PersonRow.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		35BA1B092C0CD770003F47AE /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				35B4FC562C0CCF7600EE450C /* HomeViewModelSqlite.swift */,
+				35B4FC582C0CCF8400EE450C /* DetailViewModelSqlite.swift */,
+				35B4FC5A2C0CCF9000EE450C /* SaveViewModelSqlite.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		35BA1B0A2C0CD7D2003F47AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35BA1B0B2C0CD7D2003F47AE /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35BA1B1D2C0CD83E003F47AE /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				35BA1B212C0CD8C9003F47AE /* rehber.sqlite */,
+				35BA1B0C2C0CD837003F47AE /* ContactsApp-MVVM-SwiftUI-Bridging-Header.h */,
+				35BA1B0D2C0CD837003F47AE /* FMDatabase.h */,
+				35BA1B102C0CD837003F47AE /* FMDatabase.m */,
+				35BA1B122C0CD837003F47AE /* FMDatabaseAdditions.h */,
+				35BA1B132C0CD837003F47AE /* FMDatabaseAdditions.m */,
+				35BA1B0F2C0CD837003F47AE /* FMDatabasePool.h */,
+				35BA1B142C0CD837003F47AE /* FMDatabasePool.m */,
+				35BA1B0E2C0CD837003F47AE /* FMDatabaseQueue.h */,
+				35BA1B112C0CD837003F47AE /* FMDatabaseQueue.m */,
+				35BA1B172C0CD837003F47AE /* FMDB.h */,
+				35BA1B162C0CD837003F47AE /* FMResultSet.h */,
+				35BA1B152C0CD837003F47AE /* FMResultSet.m */,
+			);
+			path = SQLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +226,7 @@
 				TargetAttributes = {
 					35B4FC3D2C0CCD9400EE450C = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -196,6 +255,7 @@
 			files = (
 				35B4FC492C0CCD9500EE450C /* Preview Assets.xcassets in Resources */,
 				35B4FC462C0CCD9500EE450C /* Assets.xcassets in Resources */,
+				35BA1B222C0CD8C9003F47AE /* rehber.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,13 +268,18 @@
 			files = (
 				35B4FC522C0CCDF300EE450C /* Person.swift in Sources */,
 				35B4FC622C0CD14100EE450C /* PersonRow.swift in Sources */,
+				35BA1B1C2C0CD837003F47AE /* FMResultSet.m in Sources */,
+				35BA1B1B2C0CD837003F47AE /* FMDatabasePool.m in Sources */,
 				35B4FC442C0CCD9400EE450C /* HomeView.swift in Sources */,
+				35BA1B182C0CD837003F47AE /* FMDatabase.m in Sources */,
 				35B4FC422C0CCD9400EE450C /* ContactsApp_MVVM_SwiftUIApp.swift in Sources */,
 				35B4FC5F2C0CCFAF00EE450C /* SaveView.swift in Sources */,
 				35B4FC5D2C0CCF9C00EE450C /* DetailView.swift in Sources */,
-				35B4FC5B2C0CCF9000EE450C /* SaveViewModel.swift in Sources */,
-				35B4FC592C0CCF8400EE450C /* DetailViewModel.swift in Sources */,
-				35B4FC572C0CCF7600EE450C /* HomeViewModel.swift in Sources */,
+				35B4FC5B2C0CCF9000EE450C /* SaveViewModelSqlite.swift in Sources */,
+				35BA1B192C0CD837003F47AE /* FMDatabaseQueue.m in Sources */,
+				35B4FC592C0CCF8400EE450C /* DetailViewModelSqlite.swift in Sources */,
+				35B4FC572C0CCF7600EE450C /* HomeViewModelSqlite.swift in Sources */,
+				35BA1B1A2C0CD837003F47AE /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ContactsApp-MVVM-SwiftUI/Assets/Preview Content\"";
@@ -364,6 +430,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sabridindar.ContactsApp-MVVM-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ContactsApp-MVVM-SwiftUI/ContactsApp-MVVM-SwiftUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -374,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ContactsApp-MVVM-SwiftUI/Assets/Preview Content\"";
@@ -393,6 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sabridindar.ContactsApp-MVVM-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ContactsApp-MVVM-SwiftUI/ContactsApp-MVVM-SwiftUI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

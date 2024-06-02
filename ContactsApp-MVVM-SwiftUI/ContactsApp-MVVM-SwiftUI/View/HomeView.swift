@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @State fileprivate var searchingWord = ""
     
-    @ObservedObject var viewModel = HomeViewModel()
+    @ObservedObject var viewModel = HomeViewModelSqlite()
     
     var body: some View {
         NavigationStack {

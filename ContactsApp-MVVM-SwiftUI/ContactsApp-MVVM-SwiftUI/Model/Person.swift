@@ -12,6 +12,12 @@ class Person: Identifiable, Codable {
     var name: String?
     var tel:String?
     
+    enum CodingKeys: String, CodingKey {
+        case id = "kisi_id"
+        case name = "kisi_name"
+        case tel = "kisi_tel"
+    }
+    
     init() {
         
     }

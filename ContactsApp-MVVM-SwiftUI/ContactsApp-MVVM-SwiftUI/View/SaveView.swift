@@ -11,7 +11,7 @@ struct SaveView: View {
     @State fileprivate var personName = ""
     @State fileprivate var personTel = ""
     
-    var viewModel = SaveViewModel()
+    var viewModel = SaveViewModelSqlite()
     
     var body: some View {
         VStack(spacing: 60) {
