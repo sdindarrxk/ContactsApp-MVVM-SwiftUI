@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct DetailView: View {
+    @Environment(\.dismiss) var dismiss
+    
     @State fileprivate var personName = ""
     @State fileprivate var personTel = ""
     
-    var person = Person()
+    // var person = PersonModel()
+    var person = PersonModel()
     
-    var viewModel = DetailViewModelSqlite()
+    var viewModel = DetailViewModelCoreData()
     
     var body: some View {
         VStack(spacing: 60) {
@@ -22,12 +25,16 @@ struct DetailView: View {
             TextField("Person Telephone NUmber", text: $personTel)
                 .textFieldStyle(RoundedBorderTextFieldStyle()).padding()
             Button("Update") {
-                viewModel.update(id: person.id ?? "", name: personName, tel: personTel)
+                // viewModel.update(id: person.id ?? "", name: personName, tel: personTel)
+                viewModel.update(person: person, name: personName, tel: personTel)
+                dismiss()
             }
-        }.navigationTitle("Person Detail")
-            .onAppear {
-                prepareUI()
-            }
+        }
+        .navigationTitle("Person Detail")
+        .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            prepareUI()
+        }
     }
     
     fileprivate func prepareUI() {

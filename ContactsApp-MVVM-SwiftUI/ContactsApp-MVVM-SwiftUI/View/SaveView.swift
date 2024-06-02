@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct SaveView: View {
+    @Environment(\.dismiss) var dismiss
+    
     @State fileprivate var personName = ""
     @State fileprivate var personTel = ""
     
-    var viewModel = SaveViewModelSqlite()
+    var viewModel = SaveViewModelCoreData()
     
     var body: some View {
         VStack(spacing: 60) {
@@ -20,9 +22,13 @@ struct SaveView: View {
             TextField("Person Telephone NUmber",text: $personTel)
                 .textFieldStyle(RoundedBorderTextFieldStyle()).padding()
             Button("Save") {
+                // viewModel.save(name: personName, tel: personTel)
                 viewModel.save(name: personName, tel: personTel)
+                dismiss()
             }
-        }.navigationTitle("Save Person")
+        }
+        .navigationTitle("Save Person")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

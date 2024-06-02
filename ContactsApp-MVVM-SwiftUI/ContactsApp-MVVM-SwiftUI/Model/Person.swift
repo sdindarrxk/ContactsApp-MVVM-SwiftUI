@@ -10,7 +10,7 @@ import Foundation
 class Person: Identifiable, Codable {
     var id: String?
     var name: String?
-    var tel:String?
+    var tel: String?
     
     enum CodingKeys: String, CodingKey {
         case id = "kisi_id"
