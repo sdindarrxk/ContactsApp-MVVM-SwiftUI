@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State fileprivate var searchingWord = ""
-    @ObservedObject var viewModel = HomeViewModelCoreData()
+    @ObservedObject var viewModel = HomeViewModelURLSession()
     
     var body: some View {
         NavigationStack {
@@ -33,7 +33,7 @@ struct HomeView: View {
             .navigationTitle("Persons")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: SaveView()) {
+                    NavigationLink(destination: SaveView(buttonType: .save)) {
                         Image(systemName: "plus")
                     }
                 }
@@ -50,13 +50,16 @@ struct HomeView: View {
                 viewModel.loadPersons()
             }
         }
+        .onSubmit(of: .search) {
+            viewModel.search(searchingWord)
+        }
     }
     
     fileprivate func delete(at offsets: IndexSet) {
         offsets.forEach { index in
             let person = viewModel.persons[index]
-            // viewModel.delete(id: person.id!)
-            viewModel.delete(person: person)
+            // viewModel.delete(person: person)
+            viewModel.delete(id: person.id ?? "")
         }
     }
 }

@@ -27,7 +27,7 @@ class HomeViewModelSqlite: ObservableObject {
             let result = try db!.executeQuery("SELECT * FROM kisiler", values: nil)
             
             while result.next() {
-                let id = Int(result.string(forColumn: "kisi_id")!)!
+                let id = result.string(forColumn: "kisi_id")!
                 let name = result.string(forColumn: "kisi_ad")!
                 let tel = result.string(forColumn: "kisi_tel")!
                 
@@ -49,11 +49,11 @@ class HomeViewModelSqlite: ObservableObject {
         
         var list = [Person]()
         
-        do{
+        do {
             let result = try db!.executeQuery("SELECT * FROM kisiler WHERE kisi_ad like ?", values: ["%\(word)%"])
             
             while result.next() {
-                let id = Int(result.string(forColumn: "kisi_id")!)!
+                let id = result.string(forColumn: "kisi_id")!
                 let name = result.string(forColumn: "kisi_ad")!
                 let tel = result.string(forColumn: "kisi_tel")!
                 

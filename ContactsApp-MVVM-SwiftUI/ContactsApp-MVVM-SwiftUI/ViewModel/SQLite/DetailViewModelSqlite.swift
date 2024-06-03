@@ -27,4 +27,16 @@ class DetailViewModelSqlite {
         
         db?.close()
     }
+    
+    func save(name: String, tel: String) {
+        db?.open()
+        
+        do {
+            try db!.executeUpdate("INSERT INTO kisiler (kisi_ad, kisi_tel) VALUES (?, ?)", values: [name, tel])
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        db?.close()
+    }
 }

@@ -13,4 +13,11 @@ class DetailViewModelCoreData {
         person.tel = tel
         saveContext()
     }
+    
+    func save(name: String, tel: String) {
+        let person = PersonModel(context: context)
+        person.name = name
+        person.tel = tel
+        saveContext()
+    }
 }

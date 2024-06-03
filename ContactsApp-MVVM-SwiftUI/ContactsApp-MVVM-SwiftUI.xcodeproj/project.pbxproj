@@ -14,7 +14,6 @@
 		35B4FC522C0CCDF300EE450C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC512C0CCDF300EE450C /* Person.swift */; };
 		35B4FC572C0CCF7600EE450C /* HomeViewModelSqlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC562C0CCF7600EE450C /* HomeViewModelSqlite.swift */; };
 		35B4FC592C0CCF8400EE450C /* DetailViewModelSqlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC582C0CCF8400EE450C /* DetailViewModelSqlite.swift */; };
-		35B4FC5B2C0CCF9000EE450C /* SaveViewModelSqlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC5A2C0CCF9000EE450C /* SaveViewModelSqlite.swift */; };
 		35B4FC5D2C0CCF9C00EE450C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC5C2C0CCF9C00EE450C /* DetailView.swift */; };
 		35B4FC5F2C0CCFAF00EE450C /* SaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC5E2C0CCFAF00EE450C /* SaveView.swift */; };
 		35B4FC622C0CD14100EE450C /* PersonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC612C0CD14100EE450C /* PersonRow.swift */; };
@@ -26,8 +25,11 @@
 		35BA1B222C0CD8C9003F47AE /* rehber.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 35BA1B212C0CD8C9003F47AE /* rehber.sqlite */; };
 		35BA1B252C0CDE67003F47AE /* HomeViewModelCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BA1B242C0CDE67003F47AE /* HomeViewModelCoreData.swift */; };
 		35BA1B272C0CDE78003F47AE /* DetailViewModelCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BA1B262C0CDE78003F47AE /* DetailViewModelCoreData.swift */; };
-		35BA1B292C0CDE90003F47AE /* SaveViewModelCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BA1B282C0CDE90003F47AE /* SaveViewModelCoreData.swift */; };
 		35BA1B302C0CDFDF003F47AE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35BA1B2E2C0CDFDF003F47AE /* Model.xcdatamodeld */; };
+		35BA1B362C0CFCED003F47AE /* HomeViewModelURLSession .swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BA1B352C0CFCED003F47AE /* HomeViewModelURLSession .swift */; };
+		35BA1B382C0CFD15003F47AE /* DetailViewModelURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BA1B372C0CFD15003F47AE /* DetailViewModelURLSession.swift */; };
+		35EBC4DE2C0D3027001DB8BA /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EBC4DD2C0D3027001DB8BA /* BaseResponse.swift */; };
+		35EBC4E02C0D316A001DB8BA /* PersonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EBC4DF2C0D316A001DB8BA /* PersonResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +41,10 @@
 		35B4FC512C0CCDF300EE450C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		35B4FC562C0CCF7600EE450C /* HomeViewModelSqlite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelSqlite.swift; sourceTree = "<group>"; };
 		35B4FC582C0CCF8400EE450C /* DetailViewModelSqlite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelSqlite.swift; sourceTree = "<group>"; };
-		35B4FC5A2C0CCF9000EE450C /* SaveViewModelSqlite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewModelSqlite.swift; sourceTree = "<group>"; };
 		35B4FC5C2C0CCF9C00EE450C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		35B4FC5E2C0CCFAF00EE450C /* SaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveView.swift; sourceTree = "<group>"; };
 		35B4FC612C0CD14100EE450C /* PersonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRow.swift; sourceTree = "<group>"; };
+		35B5B9302C0D19E2007095A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		35BA1B0B2C0CD7D2003F47AE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		35BA1B0D2C0CD837003F47AE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		35BA1B0E2C0CD837003F47AE /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
@@ -58,9 +60,11 @@
 		35BA1B212C0CD8C9003F47AE /* rehber.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = rehber.sqlite; sourceTree = "<group>"; };
 		35BA1B242C0CDE67003F47AE /* HomeViewModelCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelCoreData.swift; sourceTree = "<group>"; };
 		35BA1B262C0CDE78003F47AE /* DetailViewModelCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelCoreData.swift; sourceTree = "<group>"; };
-		35BA1B282C0CDE90003F47AE /* SaveViewModelCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewModelCoreData.swift; sourceTree = "<group>"; };
 		35BA1B2F2C0CDFDF003F47AE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		35BA1B332C0CED26003F47AE /* ContactsApp-MVVM-SwiftUI-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsApp-MVVM-SwiftUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		35BA1B352C0CFCED003F47AE /* HomeViewModelURLSession .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModelURLSession .swift"; sourceTree = "<group>"; };
+		35BA1B372C0CFD15003F47AE /* DetailViewModelURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelURLSession.swift; sourceTree = "<group>"; };
+		35EBC4DD2C0D3027001DB8BA /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		35EBC4DF2C0D316A001DB8BA /* PersonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				35B4FC402C0CCD9400EE450C /* ContactsApp-MVVM-SwiftUI */,
-				35BA1B332C0CED26003F47AE /* ContactsApp-MVVM-SwiftUI-Bridging-Header.h */,
 				35B4FC3F2C0CCD9400EE450C /* Products */,
 				35BA1B0A2C0CD7D2003F47AE /* Frameworks */,
 			);
@@ -95,6 +98,7 @@
 		35B4FC402C0CCD9400EE450C /* ContactsApp-MVVM-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				35B5B9302C0D19E2007095A0 /* Info.plist */,
 				35B4FC4F2C0CCDA100EE450C /* App */,
 				35B4FC532C0CCDF700EE450C /* Model */,
 				35B4FC552C0CCE7A00EE450C /* ViewModel */,
@@ -135,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				35B4FC512C0CCDF300EE450C /* Person.swift */,
+				35EBC4DD2C0D3027001DB8BA /* BaseResponse.swift */,
+				35EBC4DF2C0D316A001DB8BA /* PersonResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +159,7 @@
 		35B4FC552C0CCE7A00EE450C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				35BA1B342C0CFCC7003F47AE /* URLSession */,
 				35BA1B232C0CDE4B003F47AE /* CoreData */,
 				35BA1B092C0CD770003F47AE /* SQLite */,
 			);
@@ -172,7 +179,6 @@
 			children = (
 				35B4FC562C0CCF7600EE450C /* HomeViewModelSqlite.swift */,
 				35B4FC582C0CCF8400EE450C /* DetailViewModelSqlite.swift */,
-				35B4FC5A2C0CCF9000EE450C /* SaveViewModelSqlite.swift */,
 			);
 			path = SQLite;
 			sourceTree = "<group>";
@@ -209,9 +215,17 @@
 			children = (
 				35BA1B242C0CDE67003F47AE /* HomeViewModelCoreData.swift */,
 				35BA1B262C0CDE78003F47AE /* DetailViewModelCoreData.swift */,
-				35BA1B282C0CDE90003F47AE /* SaveViewModelCoreData.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		35BA1B342C0CFCC7003F47AE /* URLSession */ = {
+			isa = PBXGroup;
+			children = (
+				35BA1B352C0CFCED003F47AE /* HomeViewModelURLSession .swift */,
+				35BA1B372C0CFD15003F47AE /* DetailViewModelURLSession.swift */,
+			);
+			path = URLSession;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,10 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				35B4FC522C0CCDF300EE450C /* Person.swift in Sources */,
+				35EBC4E02C0D316A001DB8BA /* PersonResponse.swift in Sources */,
 				35B4FC622C0CD14100EE450C /* PersonRow.swift in Sources */,
 				35BA1B1C2C0CD837003F47AE /* FMResultSet.m in Sources */,
 				35BA1B1B2C0CD837003F47AE /* FMDatabasePool.m in Sources */,
 				35B4FC442C0CCD9400EE450C /* HomeView.swift in Sources */,
+				35EBC4DE2C0D3027001DB8BA /* BaseResponse.swift in Sources */,
 				35BA1B302C0CDFDF003F47AE /* Model.xcdatamodeld in Sources */,
 				35BA1B182C0CD837003F47AE /* FMDatabase.m in Sources */,
 				35B4FC422C0CCD9400EE450C /* ContactsApp_MVVM_SwiftUIApp.swift in Sources */,
@@ -298,12 +314,12 @@
 				35BA1B252C0CDE67003F47AE /* HomeViewModelCoreData.swift in Sources */,
 				35B4FC5D2C0CCF9C00EE450C /* DetailView.swift in Sources */,
 				35BA1B272C0CDE78003F47AE /* DetailViewModelCoreData.swift in Sources */,
-				35B4FC5B2C0CCF9000EE450C /* SaveViewModelSqlite.swift in Sources */,
+				35BA1B382C0CFD15003F47AE /* DetailViewModelURLSession.swift in Sources */,
 				35BA1B192C0CD837003F47AE /* FMDatabaseQueue.m in Sources */,
 				35B4FC592C0CCF8400EE450C /* DetailViewModelSqlite.swift in Sources */,
 				35B4FC572C0CCF7600EE450C /* HomeViewModelSqlite.swift in Sources */,
 				35BA1B1A2C0CD837003F47AE /* FMDatabaseAdditions.m in Sources */,
-				35BA1B292C0CDE90003F47AE /* SaveViewModelCoreData.swift in Sources */,
+				35BA1B362C0CFCED003F47AE /* HomeViewModelURLSession .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +457,7 @@
 				DEVELOPMENT_TEAM = 688BH99XNH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ContactsApp-MVVM-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -473,6 +490,7 @@
 				DEVELOPMENT_TEAM = 688BH99XNH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ContactsApp-MVVM-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

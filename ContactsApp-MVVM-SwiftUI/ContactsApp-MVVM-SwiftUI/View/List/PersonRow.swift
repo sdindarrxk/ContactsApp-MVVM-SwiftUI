@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct PersonRow: View {
-    // var person = Person()
-    var person = PersonModel()
+    // var person = PersonModel()
+    var person = Person()
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
