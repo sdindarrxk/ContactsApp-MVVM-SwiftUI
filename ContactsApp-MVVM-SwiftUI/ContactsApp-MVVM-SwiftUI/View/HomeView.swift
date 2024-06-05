@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State fileprivate var searchingWord = ""
-    @ObservedObject var viewModel = HomeViewModelURLSession()
+    @ObservedObject var viewModel = HomeViewModelAlamofire()
     
     var body: some View {
         NavigationStack {

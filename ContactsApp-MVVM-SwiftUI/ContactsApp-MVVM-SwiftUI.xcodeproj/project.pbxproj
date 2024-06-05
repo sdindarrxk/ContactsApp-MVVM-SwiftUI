@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3546BF682C1110CB00934039 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3546BF672C1110CB00934039 /* Alamofire */; };
+		3546BF6F2C11116E00934039 /* HomeViewModelAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546BF6E2C11116E00934039 /* HomeViewModelAlamofire.swift */; };
+		3546BF712C11117C00934039 /* DetailViewModelAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3546BF702C11117C00934039 /* DetailViewModelAlamofire.swift */; };
 		35B4FC422C0CCD9400EE450C /* ContactsApp_MVVM_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC412C0CCD9400EE450C /* ContactsApp_MVVM_SwiftUIApp.swift */; };
 		35B4FC442C0CCD9400EE450C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4FC432C0CCD9400EE450C /* HomeView.swift */; };
 		35B4FC462C0CCD9500EE450C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B4FC452C0CCD9500EE450C /* Assets.xcassets */; };
@@ -32,7 +35,22 @@
 		35EBC4E02C0D316A001DB8BA /* PersonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EBC4DF2C0D316A001DB8BA /* PersonResponse.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3546BF732C11195C00934039 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3546BF6E2C11116E00934039 /* HomeViewModelAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelAlamofire.swift; sourceTree = "<group>"; };
+		3546BF702C11117C00934039 /* DetailViewModelAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelAlamofire.swift; sourceTree = "<group>"; };
 		35B4FC3E2C0CCD9400EE450C /* ContactsApp-MVVM-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ContactsApp-MVVM-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B4FC412C0CCD9400EE450C /* ContactsApp_MVVM_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsApp_MVVM_SwiftUIApp.swift; sourceTree = "<group>"; };
 		35B4FC432C0CCD9400EE450C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -44,7 +62,7 @@
 		35B4FC5C2C0CCF9C00EE450C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		35B4FC5E2C0CCFAF00EE450C /* SaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveView.swift; sourceTree = "<group>"; };
 		35B4FC612C0CD14100EE450C /* PersonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRow.swift; sourceTree = "<group>"; };
-		35B5B9302C0D19E2007095A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		35B5B9302C0D19E2007095A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35BA1B0B2C0CD7D2003F47AE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		35BA1B0D2C0CD837003F47AE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		35BA1B0E2C0CD837003F47AE /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
@@ -72,12 +90,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3546BF682C1110CB00934039 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3546BF6B2C1110F600934039 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				3546BF6E2C11116E00934039 /* HomeViewModelAlamofire.swift */,
+				3546BF702C11117C00934039 /* DetailViewModelAlamofire.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		3546BF6C2C11113F00934039 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				35EBC4DF2C0D316A001DB8BA /* PersonResponse.swift */,
+				35EBC4DD2C0D3027001DB8BA /* BaseResponse.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
 		35B4FC352C0CCD9300EE450C = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +135,6 @@
 		35B4FC402C0CCD9400EE450C /* ContactsApp-MVVM-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				35B5B9302C0D19E2007095A0 /* Info.plist */,
 				35B4FC4F2C0CCDA100EE450C /* App */,
 				35B4FC532C0CCDF700EE450C /* Model */,
 				35B4FC552C0CCE7A00EE450C /* ViewModel */,
@@ -106,6 +142,7 @@
 				35B4FC502C0CCDAF00EE450C /* Assets */,
 				35BA1B1D2C0CD83E003F47AE /* SQLite */,
 				35BA1B2E2C0CDFDF003F47AE /* Model.xcdatamodeld */,
+				35B5B9302C0D19E2007095A0 /* Info.plist */,
 			);
 			path = "ContactsApp-MVVM-SwiftUI";
 			sourceTree = "<group>";
@@ -139,8 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				35B4FC512C0CCDF300EE450C /* Person.swift */,
-				35EBC4DD2C0D3027001DB8BA /* BaseResponse.swift */,
-				35EBC4DF2C0D316A001DB8BA /* PersonResponse.swift */,
+				3546BF6C2C11113F00934039 /* ResponseModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +195,7 @@
 		35B4FC552C0CCE7A00EE450C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3546BF6B2C1110F600934039 /* Alamofire */,
 				35BA1B342C0CFCC7003F47AE /* URLSession */,
 				35BA1B232C0CDE4B003F47AE /* CoreData */,
 				35BA1B092C0CD770003F47AE /* SQLite */,
@@ -238,12 +275,16 @@
 				35B4FC3A2C0CCD9400EE450C /* Sources */,
 				35B4FC3B2C0CCD9400EE450C /* Frameworks */,
 				35B4FC3C2C0CCD9400EE450C /* Resources */,
+				3546BF732C11195C00934039 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "ContactsApp-MVVM-SwiftUI";
+			packageProductDependencies = (
+				3546BF672C1110CB00934039 /* Alamofire */,
+			);
 			productName = "ContactsApp-MVVM-SwiftUI";
 			productReference = 35B4FC3E2C0CCD9400EE450C /* ContactsApp-MVVM-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -273,6 +314,9 @@
 				Base,
 			);
 			mainGroup = 35B4FC352C0CCD9300EE450C;
+			packageReferences = (
+				3546BF662C1110CB00934039 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 35B4FC3F2C0CCD9400EE450C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -302,6 +346,7 @@
 			files = (
 				35B4FC522C0CCDF300EE450C /* Person.swift in Sources */,
 				35EBC4E02C0D316A001DB8BA /* PersonResponse.swift in Sources */,
+				3546BF712C11117C00934039 /* DetailViewModelAlamofire.swift in Sources */,
 				35B4FC622C0CD14100EE450C /* PersonRow.swift in Sources */,
 				35BA1B1C2C0CD837003F47AE /* FMResultSet.m in Sources */,
 				35BA1B1B2C0CD837003F47AE /* FMDatabasePool.m in Sources */,
@@ -316,6 +361,7 @@
 				35BA1B272C0CDE78003F47AE /* DetailViewModelCoreData.swift in Sources */,
 				35BA1B382C0CFD15003F47AE /* DetailViewModelURLSession.swift in Sources */,
 				35BA1B192C0CD837003F47AE /* FMDatabaseQueue.m in Sources */,
+				3546BF6F2C11116E00934039 /* HomeViewModelAlamofire.swift in Sources */,
 				35B4FC592C0CCF8400EE450C /* DetailViewModelSqlite.swift in Sources */,
 				35B4FC572C0CCF7600EE450C /* HomeViewModelSqlite.swift in Sources */,
 				35BA1B1A2C0CD837003F47AE /* FMDatabaseAdditions.m in Sources */,
@@ -532,6 +578,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3546BF662C1110CB00934039 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3546BF672C1110CB00934039 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3546BF662C1110CB00934039 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		35BA1B2E2C0CDFDF003F47AE /* Model.xcdatamodeld */ = {

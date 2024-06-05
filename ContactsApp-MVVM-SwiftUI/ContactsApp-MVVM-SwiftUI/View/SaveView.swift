@@ -32,7 +32,7 @@ struct SaveView: View {
     @State fileprivate var personName = ""
     @State fileprivate var personTel = ""
     
-    var viewModel = DetailViewModelURLSession()
+    var viewModel = DetailViewModelAlamofire()
     
     init(buttonType: ButtonType, person: Person? = nil) {
         let type = buttonType.getButtonStrings()
