@@ -9,8 +9,6 @@ import Foundation
 
 class HomeViewModelURLSession: ObservableObject {
     @Published var persons = [Person]()
-    @Published var isSearching: Bool = false
-    @Published var noResults: Bool = false
     
     func loadPersons() {
         guard let url = URL(string: "http://kasimadalan.pe.hu/kisiler/tum_kisiler.php") else { return }
@@ -32,7 +30,6 @@ class HomeViewModelURLSession: ObservableObject {
     }
     
     func search(_ word: String) {
-        isSearching = true
         guard let url = URL(string: "http://kasimadalan.pe.hu/kisiler/tum_kisiler_arama.php") else { return }
         let postString = "kisi_ad=\(word)"
         
@@ -52,10 +49,8 @@ class HomeViewModelURLSession: ObservableObject {
                 }
             } catch {
                 print(error.localizedDescription)
-                noResults = true
             }
         }.resume()
-        isSearching = false
     }
     
     func delete(id: String) {

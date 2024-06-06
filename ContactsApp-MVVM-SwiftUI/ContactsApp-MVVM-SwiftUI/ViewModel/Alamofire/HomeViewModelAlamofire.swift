@@ -10,8 +10,6 @@ import Alamofire
 
 class HomeViewModelAlamofire: ObservableObject {
     @Published var persons = [Person]()
-    @Published var isSearching: Bool = false
-    @Published var noResults: Bool = false
     
     func loadPersons() {
         let url = "http://kasimadalan.pe.hu/kisiler/tum_kisiler.php"
@@ -32,7 +30,6 @@ class HomeViewModelAlamofire: ObservableObject {
     }
     
     func search(_ word: String) {
-        isSearching = true
         let url = "http://kasimadalan.pe.hu/kisiler/tum_kisiler_arama.php"
         
         let params = ["kisi_ad": word]
@@ -46,10 +43,8 @@ class HomeViewModelAlamofire: ObservableObject {
                     self.persons = list
                 }
             } catch {
-                noResults = true
                 print(error.localizedDescription)
             }   
-            isSearching = false
         }
     }
     

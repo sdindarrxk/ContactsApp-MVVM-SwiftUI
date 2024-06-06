@@ -50,7 +50,5 @@ class DetailViewModelAlamofire {
                 print(error.localizedDescription)
             }
         }
-
     }
-
 }
